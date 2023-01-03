@@ -1,0 +1,46 @@
+{
+  "products": {
+    "-NDI6MEkoBdjfu4ttjiP": {
+      "description": "Jeep tradicional",
+      "imageUrl": "https://thumbs.dreamstime.com/z/jipe-amarelo-11783273.jpg",
+      "isFavorite": true,
+      "name": "Replica de carro",
+      "price": 120
+    },
+    "-NDLqmi-UTsTe5uwYAZ0": {
+      "description": "Tennis all star tradicional",
+      "imageUrl": "https://cloviscalcados.vteximg.com.br/arquivos/ids/262245-460-460/Tenis-Feminino-Chuck-Taylor-Platform-Perto-Converse-All-Star-CT0495-0320495_001-01.jpg",
+      "isFavorite": false,
+      "name": "Tennis All Star preto",
+      "price": 230.49
+    },
+    "-NDLrT0RxNmt7gWrz5-r": {
+      "description": "Conjunto de lapis de colorir",
+      "imageUrl": "https://bikas.com.br/wp-content/uploads/2020/07/lapis-cor-jumbo-maped-24-cores-color-peps-D_NQ_NP_634355-MLB28010585115_082018-F.jpg",
+      "isFavorite": false,
+      "name": "Lapis de Colorir",
+      "price": 25
+    },
+    "-NDLru6xvnz9p241_4wn": {
+      "description": "Fones de ouvido sem fio",
+      "imageUrl": "https://www.ibroken.com.br/imagem/index/26881455/G/captura_de_tela_2020_11_25_as_08.37.34.png",
+      "isFavorite": true,
+      "name": "AirPod",
+      "price": 199.9
+    },
+    "-NDLs8tTtu9YCPZsgck1": {
+      "description": "Filhote de cachorro",
+      "imageUrl": "https://static1.patasdacasa.com.br/articles/9/43/79/@/18750-as-fotos-de-cachorros-filhotes-deixam-qu-articles_media_mobile-2.jpg",
+      "isFavorite": false,
+      "name": "Filhote de cachorro",
+      "price": 1200
+    },
+    "-NDLsfLTvIUEPFdF4FsC": {
+      "description": "Guitarra eletrica profissional",
+      "imageUrl": "https://ninjasom.vteximg.com.br/arquivos/ids/175470-1200-1200/Guitarra-Preta-EG-810-BK---Maclend.jpg",
+      "isFavorite": false,
+      "name": "Guitarra",
+      "price": 2500.69
+    }
+  }
+}
