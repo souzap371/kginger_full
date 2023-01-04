@@ -42,6 +42,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
         _formData['tamanho'] = product.tamanho;
         _formData['quantidade'] = product.quantidade;
         _formData['price'] = product.price;
+        //_formData['image'] = product.image;
         _formData['imageUrl'] = product.imageUrl;
         _imageUrlController.text = product.imageUrl;
       }

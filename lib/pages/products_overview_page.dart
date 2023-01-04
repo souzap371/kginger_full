@@ -40,43 +40,48 @@ class _ProductsOverviewPageState extends State<ProductsOverviewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Minha Loja'),
-        actions: [
-          PopupMenuButton(
-            icon: const Icon(Icons.more_vert),
-            itemBuilder: (_) => [
-              const PopupMenuItem(
-                value: FilterOptions.favorite,
-                child: Text('Somente Favoritos'),
-              ),
-              const PopupMenuItem(
-                value: FilterOptions.all,
-                child: Text('Todos'),
-              ),
-            ],
-            onSelected: (FilterOptions selectedValue) {
-              setState(() {
-                if (selectedValue == FilterOptions.favorite) {
-                  _showFavoriteOnly = true;
-                } else {
-                  _showFavoriteOnly = false;
-                }
-              });
-            },
-          ),
-          Consumer<Cart>(
-            child: IconButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed(AppRoutes.cart);
-              },
-              icon: const Icon(Icons.shopping_cart),
-            ),
-            builder: (ctx, cart, child) => Badge(
-              value: cart.itemsCount.toString(),
-              child: child!,
-            ),
-          ),
-        ],
+        centerTitle: true,
+        title: Image.asset(
+          'images/logo_kginger_escuro_removebg_preview.png',
+          width: 120,
+          alignment: FractionalOffset.center,
+        ),
+        // actions: [
+        // PopupMenuButton(
+        //   icon: const Icon(Icons.more_vert),
+        //   itemBuilder: (_) => [
+        //     const PopupMenuItem(
+        //       value: FilterOptions.favorite,
+        //       child: Text('Somente Favoritos'),
+        //     ),
+        //     const PopupMenuItem(
+        //       value: FilterOptions.all,
+        //       child: Text('Todos'),
+        //     ),
+        //   ],
+        //   onSelected: (FilterOptions selectedValue) {
+        //     setState(() {
+        //       if (selectedValue == FilterOptions.favorite) {
+        //         _showFavoriteOnly = true;
+        //       } else {
+        //         _showFavoriteOnly = false;
+        //       }
+        //     });
+        //   },
+        // ),
+        // Consumer<Cart>(
+        //   child: IconButton(
+        //     onPressed: () {
+        //       Navigator.of(context).pushNamed(AppRoutes.cart);
+        //     },
+        //     icon: const Icon(Icons.shopping_cart),
+        //   ),
+        //   builder: (ctx, cart, child) => Badge(
+        //     value: cart.itemsCount.toString(),
+        //     child: child!,
+        //   ),
+        // ),
+        //],
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())

@@ -47,7 +47,7 @@ class ProductDetailPage extends StatelessWidget {
               [
                 const SizedBox(height: 10),
                 Text(
-                  'R\$ ${product.price}',
+                  'Valor Unitário R\$ ${product.price}',
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                     color: Colors.grey,
@@ -59,7 +59,7 @@ class ProductDetailPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   width: double.infinity,
                   child: Text(
-                    product.tamanho,
+                    'Tamanho' + ' ' + '=' + ' ' + '${product.tamanho}',
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -67,7 +67,7 @@ class ProductDetailPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   width: double.infinity,
                   child: Text(
-                    '${product.quantidade}',
+                    'Quantidade' + ' ' + '=' + ' ' + '${product.quantidade}',
                     textAlign: TextAlign.center,
                   ),
                 ),

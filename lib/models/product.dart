@@ -11,6 +11,7 @@ class Product with ChangeNotifier {
   final String quantidade;
   final double price;
   final String imageUrl;
+  //final File image;
   bool isFavorite;
 
   Product({
@@ -20,6 +21,7 @@ class Product with ChangeNotifier {
     required this.quantidade,
     required this.price,
     required this.imageUrl,
+    //required this.image,
     this.isFavorite = false,
   });
 

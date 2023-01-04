@@ -39,7 +39,8 @@ class AuthPage extends StatelessWidget {
                       ),
                       // width: 128,
                       // height: 128,
-                      child: Image.asset('images/logo_kginger.png'),
+                      child: Image.asset(
+                          'images/logo_kginger__removebg_preview.png'),
                     ),
                     // Container(
                     //   margin: const EdgeInsets.only(bottom: 20),

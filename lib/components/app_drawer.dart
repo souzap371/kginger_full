@@ -27,19 +27,19 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.payment),
-            title: const Text('Pedidos'),
-            onTap: () {
-              Navigator.of(context).pushReplacementNamed(
-                AppRoutes.orders,
-              );
-              // Navigator.of(context).pushReplacement(
-              //   CustomRoute(builder: (ctx) => const OrdersPage()),
-              // );
-            },
-          ),
+          // const Divider(),
+          // ListTile(
+          //   leading: const Icon(Icons.payment),
+          //   title: const Text('Pedidos'),
+          //   onTap: () {
+          //     Navigator.of(context).pushReplacementNamed(
+          //       AppRoutes.orders,
+          //     );
+          // -------Navigator.of(context).pushReplacement(
+          // -------  CustomRoute(builder: (ctx) => const OrdersPage()),
+          // -------);
+          //   },
+          // ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.edit),

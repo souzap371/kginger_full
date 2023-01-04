@@ -33,6 +33,9 @@ dependencies:
   intl: ^0.17.0
   http: ^0.13.5
   shared_preferences: ^2.0.15
+  image_picker: ^0.8.6
+  path_provider: ^2.0.11
+  path: ^1.8.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -64,6 +67,8 @@ flutter:
     - assets/images/product-placeholder.png
     - images/logo_kginger.png
     - images/logo_kginger_.png
+    - images/logo_kginger__removebg_preview.png
+    - images/logo_kginger_escuro_removebg_preview.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

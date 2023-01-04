@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -53,6 +54,7 @@ class ProductList with ChangeNotifier {
           quantidade: productData['quantidade'],
           price: productData['price'],
           imageUrl: productData['imageUrl'],
+          //image: productData['image'],
           isFavorite: isFavorite,
         ),
       );
@@ -70,6 +72,7 @@ class ProductList with ChangeNotifier {
       quantidade: data['quantidade'] as String,
       price: data['price'] as double,
       imageUrl: data['imageUrl'] as String,
+      //image: data['image'] as File,
     );
 
     if (hasId) {
@@ -89,6 +92,7 @@ class ProductList with ChangeNotifier {
           "quantidade": product.quantidade,
           "price": product.price,
           "imageUrl": product.imageUrl,
+          //"image": product.image,
         },
       ),
     );
@@ -101,6 +105,7 @@ class ProductList with ChangeNotifier {
       quantidade: product.quantidade,
       price: product.price,
       imageUrl: product.imageUrl,
+      //image: product.image,
     ));
     notifyListeners();
   }
@@ -119,6 +124,7 @@ class ProductList with ChangeNotifier {
             "quantidade": product.quantidade,
             "price": product.price,
             "imageUrl": product.imageUrl,
+            //"image": product.image,
           },
         ),
       );
