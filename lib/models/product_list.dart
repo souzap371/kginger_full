@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -21,7 +20,6 @@ class ProductList with ChangeNotifier {
     this._userId = '',
     this._items = const [],
   ]);
-
   int get itemsCount {
     return _items.length;
   }
@@ -30,7 +28,7 @@ class ProductList with ChangeNotifier {
     _items.clear();
 
     final response = await http.get(
-      Uri.parse('${Constants.productBaseUrl}/$_userId.json?auth=$_token'),
+      Uri.parse('${Constants.productBaseUrl}/${_userId}.json?auth=$_token'),
     );
     if (response.body == 'null') return;
 
