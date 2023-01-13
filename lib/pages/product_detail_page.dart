@@ -22,7 +22,7 @@ class ProductDetailPage extends StatelessWidget {
                   Hero(
                     tag: product.id,
                     child: Image.network(
-                      product.imageUrl,
+                      '${product.foto}',
                       fit: BoxFit.cover,
                     ),
                   ),

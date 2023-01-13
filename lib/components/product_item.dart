@@ -19,7 +19,8 @@ class ProductItem extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: CircleAvatar(
-          backgroundImage: NetworkImage(product.imageUrl),
+          backgroundImage: NetworkImage('${product.foto}'),
+          //backgroundImage: NetworkImage(product.imageUrl),
         ),
         title: Text('${product.name}' '=' + '${product.tamanho}'),
         subtitle: Text('${product.price}'),

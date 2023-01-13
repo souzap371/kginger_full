@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -10,8 +11,8 @@ class Product with ChangeNotifier {
   final String tamanho;
   final String quantidade;
   final double price;
-  final String imageUrl;
-  //final File image;
+  //final String imageUrl;
+  final File foto;
   bool isFavorite;
 
   Product({
@@ -20,8 +21,8 @@ class Product with ChangeNotifier {
     required this.tamanho,
     required this.quantidade,
     required this.price,
-    required this.imageUrl,
-    //required this.image,
+    //required this.imageUrl,
+    required this.foto,
     this.isFavorite = false,
   });
 

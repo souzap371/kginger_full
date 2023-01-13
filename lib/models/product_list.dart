@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -51,9 +52,9 @@ class ProductList with ChangeNotifier {
           tamanho: productData['tamanho'],
           quantidade: productData['quantidade'],
           price: productData['price'],
-          imageUrl: productData['imageUrl'],
-          //image: productData['image'],
-          isFavorite: isFavorite,
+          //imageUrl: productData['imageUrl'],
+          foto: productData['foto'],
+          //isFavorite: isFavorite,
         ),
       );
     });
@@ -69,8 +70,8 @@ class ProductList with ChangeNotifier {
       tamanho: data['tamanho'] as String,
       quantidade: data['quantidade'] as String,
       price: data['price'] as double,
-      imageUrl: data['imageUrl'] as String,
-      //image: data['image'] as File,
+      //imageUrl: data['imageUrl'] as String,
+      foto: data['foto'] as File,
     );
 
     if (hasId) {
@@ -89,8 +90,8 @@ class ProductList with ChangeNotifier {
           "tamanho": product.tamanho,
           "quantidade": product.quantidade,
           "price": product.price,
-          "imageUrl": product.imageUrl,
-          //"image": product.image,
+          //"imageUrl": product.imageUrl,
+          "foto": product.foto,
         },
       ),
     );
@@ -102,8 +103,8 @@ class ProductList with ChangeNotifier {
       tamanho: product.tamanho,
       quantidade: product.quantidade,
       price: product.price,
-      imageUrl: product.imageUrl,
-      //image: product.image,
+      //imageUrl: product.imageUrl,
+      foto: product.foto,
     ));
     notifyListeners();
   }
@@ -121,8 +122,8 @@ class ProductList with ChangeNotifier {
             "tamanho": product.tamanho,
             "quantidade": product.quantidade,
             "price": product.price,
-            "imageUrl": product.imageUrl,
-            //"image": product.image,
+            //"imageUrl": product.imageUrl,
+            "foto": product.foto,
           },
         ),
       );
